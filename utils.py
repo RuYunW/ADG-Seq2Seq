@@ -1,4 +1,4 @@
-from TaggedGraphEmbedding.TGEmodeling import run
+from DFGraphEmbedding.DFGmodeling import run
 import re
 import numpy as np
 import matplotlib.pyplot as plt

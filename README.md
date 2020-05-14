@@ -1,4 +1,4 @@
-# TGE-Seq2Seq: Tagged Graph Embedding based Seq2Seq model for code generation
+# DFG-Seq2Seq: Data-Flow Graph Embedding based Seq2Seq model for code generation
 ### An Encoder_Decoder_Embedder based model 
 
 Our paper:[Papername](http://paperaddress.com)

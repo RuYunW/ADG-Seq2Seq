@@ -58,7 +58,7 @@ def get_hop_orderset(k, m, node_onehot_t, behind_call_dict, front_call_dict, emb
     return order_set_onehot
 
 
-def train_tge(input_tensor, target_tensor, encoder, embedder, decoder,
+def train_dfg(input_tensor, target_tensor, encoder, embedder, decoder,
               encoder_optimizer, embedder_optimizer, decoder_optimizer, criterion, max_length,
               method_list, node_list_onehot_dict, K,
               behind_call_dict, front_call_dict,
@@ -134,7 +134,7 @@ def train_tge(input_tensor, target_tensor, encoder, embedder, decoder,
     return loss.item() / target_length, node_onehot_t
 
 
-def trainTGE(encoder, embedder, decoder, n_iters,
+def trainDFG(encoder, embedder, decoder, n_iters,
              training_inputs, training_outputs,
              method_list, node_list_onehot_dict, K,
              behind_call_dict, front_call_dict,
@@ -156,7 +156,7 @@ def trainTGE(encoder, embedder, decoder, n_iters,
 
         # node_onehot_t = node_list_onehot_dict
 
-        loss, node_onehot_t = train_tge(input_tensor, target_tensor, encoder, embedder, decoder,
+        loss, node_onehot_t = train_dfg(input_tensor, target_tensor, encoder, embedder, decoder,
                                         encoder_optimizer, embedder_optimizer, decoder_optimizer, criterion,
                                         max_length=max_length,
                                         method_list=method_list, node_list_onehot_dict=node_list_onehot_dict, K=K,
@@ -175,7 +175,7 @@ def trainTGE(encoder, embedder, decoder, n_iters,
     return node_onehot_t
 
 
-def evaluate_tge(encoder, embedder, decoder,
+def evaluate_dfg(encoder, embedder, decoder,
                  sentence, max_length, node_onehot_t, code_dic_i2w, method_list, K):
     with torch.no_grad():
         input_tensor = sentence

@@ -2,7 +2,7 @@
 Tag-graph embedding generation algorithm
 '''
 
-from TaggedGraphEmbedding.TGEutils import *
+from DFGraphEmbedding.TGE import *
 from numpy import *
 import re
 from tqdm import tqdm

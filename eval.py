@@ -15,7 +15,7 @@ attn_decoder.load_state_dict(torch.load('model/'+ds_name+'decoder_model.pkl'))
 for i in range(num_test):
     input_tensor = test_source[i]
     input_words = index2text(input_tensor, describe_dic_i2w)
-    output_words, attentions = evaluate_tge(encoder, embedder, attn_decoder, input_tensor,
+    output_words, attentions = evaluate_dfg(encoder, embedder, attn_decoder, input_tensor,
                                             max_length=max(max_source_len, max_target_len),
                                             node_onehot_t=node_onehot_t, code_dic_i2w=code_dic_i2w,
                                             method_list=method_list, K=K)

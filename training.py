@@ -2,7 +2,7 @@ from run import *
 
 
 print('\n\ntraining begin...')
-node_onehot_t = trainTGE(encoder, embedder, attn_decoder, num_training,
+node_onehot_t = trainDFG(encoder, embedder, attn_decoder, num_training,
                          training_inputs=training_source, training_outputs=training_target,
                          method_list=method_list, node_list_onehot_dict=node_list_onehot_dict, K=K,
                          behind_call_dict=behind_call_dict, front_call_dict=front_call_dict,

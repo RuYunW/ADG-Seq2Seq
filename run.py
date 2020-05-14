@@ -3,13 +3,13 @@ This file is the main train program of the project
 '''
 
 from __future__ import unicode_literals, print_function, division
-from TaggedGraphEmbedding.data_procesing import *
-from TaggedGraphEmbedding.TGEmodeling import *
+from DFGraphEmbedding.data_procesing import *
+from DFGraphEmbedding.DFGmodeling import *
 
 from utils import *
 import torch
 
-from model_tools import trainTGE, evaluate_tge, model_save
+from model_tools import trainDFG, evaluate_dfg, model_save
 from model import EncoderRNN, AttnDecoderRNN, EmbedderRNN
 import os
 import sys
