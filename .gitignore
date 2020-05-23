@@ -1,6 +1,6 @@
 .data/
 __pycache__
-model/
+model/*.pkl
 .idea/
 .pyc
-data/
+
