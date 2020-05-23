@@ -1,7 +1,7 @@
-# DFG-Seq2Seq: Embedding Data-Flow Graph Structure into Seq2Seq for code generation
+# ADG-Seq2Seq: Embedding API Dependency Graph Structure into Seq2Seq for code generation
 ### An Encoder_Decoder_Embedder based model 
 
-Our paper:[Papername](http://paperaddress.com)
+Our paper:[Embedding API Dependency Graph for Neural Code Generation](http://paperaddress.com)
 
 ---
 
