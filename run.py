@@ -3,13 +3,13 @@ This file is the main train program of the project
 '''
 
 from __future__ import unicode_literals, print_function, division
-from DFGraphEmbedding.data_procesing import *
-from DFGraphEmbedding.DFGmodeling import *
+from TaggedGraphEmbedding.data_procesing import *
+from TaggedGraphEmbedding.TGEmodeling import *
 
 from utils import *
 import torch
 
-from model_tools import trainDFG, evaluate_dfg, model_save
+from model_tools import trainTGE, evaluate_tge, model_save
 from model import EncoderRNN, AttnDecoderRNN, EmbedderRNN
 import os
 import sys
@@ -20,32 +20,36 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 operation = str(sys.argv[1])  # dataset
 
 train_batch_size = 64
-train_epoch = 2000
-num_samples = 10000  # Number of samples to train on.
+train_epoch = 20
+num_samples = 100  # Number of samples to train on.
 num_training = int(0.8 * num_samples)
 num_test = int(0.1 * num_samples)
 num_valid = num_samples - num_training - num_test
 K = 2  # hop size
-
-# Separating the original dataset into program & describe two parts
+max_code_diclen = 200
+max_des_diclen = 200
+max_node_diclen = 200
+is_beamsearch = True
+beam_num = 3
 
 
 if "HS" in operation:
     ds_name = 'HS'
     describe = read_dataset('./data/hs.in', num_samples)
     program = read_dataset('./data/hs.out', num_samples)
-
 elif "MTG" in operation:
     ds_name = 'MTG'
     describe = read_dataset('./data/magic.in', num_samples)
     program = read_dataset('./data/magic.out', num_samples)
-
-else:  # EJDT
+elif "EJDT" in operation:  # EJDT
     ds_name = 'EJDT'
     dataset = load_dataset('./data/EJDT.json', num_samples)  # list
     program, describe = file_dev(dataset)
+else:
+    print("Dataset not exist, please check the input. ")
+    exit()
 
-
+# Separating the original dataset into program & describe two parts
 write(describe, './data/'+ds_name+'describe.txt', ds_name)  # write describes as a txt file
 write(program, './data/'+ds_name+'program.txt', ds_name)  # write describes as a txt file
 
@@ -83,14 +87,12 @@ with torch.no_grad():
         target_batch[i] = torch.from_numpy(np.array(target_batch[i], dtype=np.int64)).to(device).view(-1, 1)
 
 hidden_size = 256
+MAX_LENGTH = max(max_source_len, max_target_len)
 
 encoder = EncoderRNN(len(describe_dic_i2w), hidden_size).to(device)
 embedder = EmbedderRNN(len(code_dic_i2w), len(code_dic_i2w), dropout=0.1).to(device)
 attn_decoder = AttnDecoderRNN(hidden_size, len(code_dic_i2w), dropout_p=0.1,
                               max_length=max(max_source_len, max_target_len)).to(device)
-
-
-
 
 node_onehot_t = [[]]  # h
 node_onehot_t[0] = node_list_onehot_dict

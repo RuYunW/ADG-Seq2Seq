@@ -79,7 +79,7 @@ class AttnDecoderRNN(nn.Module):
                                  encoder_outputs.unsqueeze(0))
 
         output = torch.cat((embedded[0], attn_applied[0]), 1)
-        output = self.attn_combine(output).unsqueeze(0)
+        output = self.attn_combine(output).unsqueeze(0)  # Linear
 
         output = F.relu(output)
         output, hidden = self.gru(output, hidden)

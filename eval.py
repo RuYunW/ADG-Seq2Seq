@@ -1,5 +1,6 @@
 from run import *
 from model import *
+import nltk
 
 
 print('evaluation begin...')
@@ -12,12 +13,17 @@ encoder.load_state_dict(torch.load('model/'+ds_name+'encoder_model.pkl'))
 embedder.load_state_dict(torch.load('model/'+ds_name+'embedder_model.pkl'))
 attn_decoder.load_state_dict(torch.load('model/'+ds_name+'decoder_model.pkl'))
 
+
 for i in range(num_test):
     input_tensor = test_source[i]
+    ground_truth_tenor = test_target[i]
     input_words = index2text(input_tensor, describe_dic_i2w)
-    output_words, attentions = evaluate_dfg(encoder, embedder, attn_decoder, input_tensor,
-                                            max_length=max(max_source_len, max_target_len),
+    ground_truth_words = index2text(ground_truth_tenor, code_dic_i2w)
+    output_words = evaluate_tge(encoder, embedder, attn_decoder, input_tensor,
+                                            max_length=MAX_LENGTH,
                                             node_onehot_t=node_onehot_t, code_dic_i2w=code_dic_i2w,
-                                            method_list=method_list, K=K)
-
-    print(" input: %s \n output: -> %s\n" % (' '.join(input_words), ' '.join(output_words)))
+                                            method_list=method_list, K=K,
+                                            beam_search=is_beamsearch, beam_num=beam_num)
+    bleu = nltk.translate.bleu_score.sentence_bleu(output_words, ground_truth_words)
+    print(" input: %s \n output: %s\n ground truth: %s\n BLEU: %.8f \n"
+          % (' '.join(input_words), ' '.join(output_words), ' '.join(ground_truth_words), bleu))
