@@ -1,4 +1,4 @@
-from TaggedGraphEmbedding.TGEmodeling import run
+from ADGraphEmbedding.ADGmodeling import run
 import re
 import numpy as np
 import matplotlib.pyplot as plt

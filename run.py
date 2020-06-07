@@ -3,8 +3,8 @@ This file is the main train program of the project
 '''
 
 from __future__ import unicode_literals, print_function, division
-from TaggedGraphEmbedding.data_procesing import *
-from TaggedGraphEmbedding.TGEmodeling import *
+from ADGraphEmbedding.data_procesing import *
+from ADGraphEmbedding.ADGmodeling import *
 
 from utils import *
 import torch
@@ -21,7 +21,7 @@ operation = str(sys.argv[1])  # dataset
 
 train_batch_size = 64
 train_epoch = 20
-num_samples = 100  # Number of samples to train on.
+num_samples = 200  # Number of samples to train on.
 num_training = int(0.8 * num_samples)
 num_test = int(0.1 * num_samples)
 num_valid = num_samples - num_training - num_test
@@ -43,7 +43,7 @@ elif "MTG" in operation:
     program = read_dataset('./data/magic.out', num_samples)
 elif "EJDT" in operation:  # EJDT
     ds_name = 'EJDT'
-    dataset = load_dataset('./data/EJDT.json', num_samples)  # list
+    dataset = load_dataset('./data/EJDT-small.json', num_samples)  # list
     program, describe = file_dev(dataset)
 else:
     print("Dataset not exist, please check the input. ")
