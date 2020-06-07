@@ -256,6 +256,7 @@ def evaluate_tge(encoder, embedder, decoder,
                         continue
 
                 token_index = int(decoder_input[0][0])
+                print(token_index)
                 token = code_dic_i2w[token_index]
                 if token in method_list:  # replace
                     decoder_input = torch.tensor(node_onehot_t[K][token], dtype=torch.float32).to(device)

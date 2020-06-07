@@ -30,7 +30,7 @@ max_code_diclen = 200
 max_des_diclen = 200
 max_node_diclen = 200
 is_beamsearch = True
-beam_num = 3
+beam_num = 10
 
 
 if "HS" in operation:
