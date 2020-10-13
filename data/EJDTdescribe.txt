@@ -1,0 +1,200 @@
+Tears down the fixture, for example, close a network connection. This method is called after a test is executed.
+javax.net.ssl.SSLEngine#unwrap(ByteBuffer src, ByteBuffer[] dsts) ReadOnlyBufferException should be thrown.
+Makes an instance for the given value. This may (but does not necessarily) return an already-allocated instance.
+Returns the "size" of the chromosome, namely, the number of nodes in all of its parsed genes -- does not include the linking functions. 
+This method is called when the plus button is clicked.
+Trims the capacity of this <tt>ArrayHashList</tt> instance to be the list's current size. An application can use this operation to minimize the storage of an <tt>ArrayHashList</tt> instance.
+Performs a deep copy on <i>other</i>.
+Removes all parsers from this text area.
+Calculate what the U value should consist of given a particular key and document configuration. Correponds to Algorithms 3.4 and 3.5 of the PDF Reference version 1.7
+Assigns the specified id to the labelMap according to its label
+Used to communicate feedback pop-up messages between a plugin tool and the main Whitebox user-interface.
+Creates a new action object.
+Create Yaml instance. It is safe to create a few instances and use them in different Threads.
+Regression test for HARMONY-4396
+Adds a single individual.
+Removes session for a given session ID.
+Loading bitmap with optimized loaded size less than specific pixels count
+Creates a period from the given millisecond duration with the standard period type and ISO rules, ensuring that the calculation is performed with the time-only period type. <p> The calculation uses the hour, minute, second and millisecond fields.
+Start with a buffer of 1KiB, then grow as required.
+Creates a new instance of PbrpcConnectionException.
+Invokes the <code>uninstallUI</code> method on each UI handled by this object.
+Saves the configuration file.
+Greater-than or equal comparison
+Builds a union coder with the given list of element coders.  This list corresponds to a mapping of union tag to Coder.  Union tags start at 0.
+Verify ability to delete a list of files.
+Evaluates if the Dependency is targeted for a classpath type.
+Checks that we can still compile a client after a change
+Creates new form PerformanceMonitor
+Wakes up node's successor, if one exists.
+Asserts that a condition is false. If it isn't it throws an AssertionFailedError with the given message.
+Initialize the Activity data
+Returns date parsed from string in format: yyyy.MM.dd.
+Checks if the given storage port is part of VArray
+Create a servlet service instance that allows the use of a custom service URL.
+Iterates over the children of a node in the operand tree and generates translations for them.
+Releases the latch and removes it from the latches being handled by this handler.
+Constructs a new Version from the current server version running
+Start SendGroupFile activity
+Sets the list of excluded data centers.
+Forwards the request to the real <code>InputStream</code>.
+Integer CAS.
+Methods converts a decimal number into a binary number as a string
+init the cache on your own.
+Increments the current number of entries whose value has been overflowed to disk by a given amount.
+Invokes the <code>paint</code> method on each UI handled by this object.
+Notification from the <code>UIManager</code> that the look and feel (L&amp;F) has changed. Replaces the current UI object with the latest version from the <code>UIManager</code>.
+Creates a new <code>RefactoringStatus</code> from the given <code>IStatus</code>. An OK status is mapped to an OK refactoring status, an information status is mapped to a warning refactoring status, a warning status is mapped to an error refactoring status and an error or cancel status is mapped to a fatal refactoring status. An unknown status is converted into a fatal error status as well. If the status is a <code>MultiStatus </code> then the first level of children of the status will be added as refactoring status entries to the created refactoring status.
+Log a Setup and/or administrative log message for log4jdbc.
+Returns the length of the integer codon representation of this grammar.
+Decodes the information and returns the Diff.
+Creates a new instance.
+Construct new auto sorted collection using natural order.
+Returns the super class implementation of toString().
+Query if we are using the layout editor panels to build the signal mast logic, blocks, turnouts .
+Convert a path component that contains backslash escape sequences to a literal string. This is necessary when you want to explicitly refer to a path that contains globber metacharacters.
+Creates a new ExampleTable.
+Zooms out by 0.7f, from the charts center. center.
+Creates an audio media that can be played in the background.
+Returns true if there's another TLS mode to try.
+Copy from the GUI to the opsw array. <p> Used before write operations start
+This method is a callback. Check the user's answer after requesting permission.
+Looks up and returns the RowSpec associated with the given key. First looks for an association in this LayoutMap. If there's no association, the lookup continues with the parent map - if any.
+Logs the best individual of the generation.
+Comprueba que el usuario tiene distinto nombre a los que ya existen.
+Create role with permissions, note that role name should be unique
+generate new  cursorBox and highlight extractable text, if hardware acceleration off and extraction on<br> and update current cursor box displayed on screen
+Construct an OMGraphicList with an initial capacity.
+Copy the current data to the settings.
+Returns true if the given string looks like a Java array name.
+Calculates the length of the vector.
+Returns this' media-type (a MIME content-type category) (previously returned a description key)
+The restore operation has begun.
+If the resource is a .gwt.xml file and we're in a gwt-enabled project, return true.
+Creates a new monster.
+Construct a default CacheLayer.
+Build an Android Address object from the Gisgraphy address in JSON format.
+Creates a new dataset with the given database connection, and executes the supplied query to populate the dataset.
+Adds semantic checks to the default deserialization method. This method must have the standard signature for a readObject method, and the body of the method must begin with "s.defaultReadObject();". Other than that, any semantic checks can be specified and do not need to stay the same from version to version. A readObject method of this form may be added to any class, even if Tetrad sessions were previously saved out using a version of the class that didn't include it. (That's what the "s.defaultReadObject();" is for. See J. Bloch, Effective Java, for help.
+Return whether this list contains the specified protocol version. SSLv2Hello is not a real protocol version we support, we always return false for it.
+<!-- begin-user-doc --> <!-- end-user-doc -->
+Return an iterator over the filter's data types.
+Sets the reference of the GUI.
+Creates an <code>IntersectionMatrix</code> with the same elements as <code>other</code>.
+Reads the next four bytes as an unsigned value.
+Transforms the given block recursively into HTML.
+Returns whether this item is a candidate for interning. The only interning candidates are ones that <i>only</i> have a non-null set of class annotations, with no other lists.
+Construct a general URI from the given components.
+Add a user
+Updates data to sign or to verify.
+Fake ctor.
+Construct and return a Video object with a rnadom name, url, and duration.
+Sets headers that will be added to all requests this client makes (before sending).
+Adds a new contact postal address.
+Constructs a CaughtExceptionRef() grammar chunk.
+Action Listener for Drill Down
+Iterator visits the direct child nodes in the external key ordering.
+Returns index of maximum element in a given array of doubles. First maximum is returned.
+Skim through the xml preference file.
+Generate an explicit null check (compare to zero).
+Construct a new Location with a named provider. <p>By default time, latitude and longitude are 0, and the location has no bearing, altitude, speed, accuracy or extras.
+Get information from nodes based on the nodes ids specified. If none are passed, information for all nodes will be returned.
+Computes 2-norm of vector
+Converts an array into array of doubles skipping specified indeces.
+Used to communicate a progress update between a plugin tool and the main Whitebox user interface.
+Creates a new composite issue processor with the given sub processor arguments.
+Removes the Max-Age option. Returns the current OptionSet object for a fluent API.
+Ctor for the Request Object
+Compute the position for the area's main label. This position indicates the position of the first line of the label. If there are more lines, they will be arranged South of the first line.
+Extracts the fields from a fixed width record and returns a map containing field names and values
+Returns true if the value is contained in the relation structure. (this is done
+Apply a visitor to a field.
+<!-- begin-user-doc --> <!-- end-user-doc -->
+end a shape, storing info for later
+Constructs a new <code>DefaultBoundValueOperations</code> instance.
+Writes a Batch of instances
+Maps zero to 0.0 and all non-zero values to 1.0 (in-place).
+Test escape sequences with additional whitespace characters
+Build an <code>EnumRowStatus</code> from a <code>Long</code>.
+Put byte[] into char[]( we treat char[] as uint8[])
+Superposes vec2 with vec1 with weight and permutation. vec1 is in CARTESIAN mode. vec2 is in POLAR mode.
+Method called to add field mix-ins from given mix-in class (and its fields) into already collected actual fields (from introspected classes and their super-classes)
+Input an instance for filtering. Ordinarily the instance is processed and made available for output immediately. Some filters require all instances be read before producing output.
+Return the last String in the set that can be prefixed by this String (Trie's are stored in alphabetical order). Return null if no such String exist in the current set.
+Attempt to coalesce register r2 into register r1.  If this is legal, <ul> <li> rewrite all defs and uses of r2 as defs and uses of r1 <li> update the liveness information <li> update the def-use chains </ul> <strong>PRECONDITION </strong> def-use chains must be computed and valid.
+Method to create a new target or to find the target if it already exists.
+Used to communicate a return object from a plugin tool to the main Whitebox user-interface.
+Returns the responding node's current term.
+Removes the player from the current ADTs.
+Constructs a RestClient.
+Creates a uniq string for combination of patterns
+Closes this <code>FileCacheImageInputStream</code>, closing and removing the cache file.  The source <code>InputStream</code> is not closed.
+Copy device content into vfs. All imported content is stored under /SESSION_NAME/ The original full path is retained to facilitate browsing The session content can be deleted when the session is over
+Creates a Project Closed Event.
+Immediately send an event for the specified Item to the clients in range. The item should implement INetworkItemEventListener to receive the event. If this method is being executed on the client (i.e. Singleplayer), it'll just call INetworkItemEventListener.onNetworkEvent (if implemented by the item).
+Returns an enumeration of the values in this table.
+Checks to see if an ExpirationTracker is already at a given coordinate to prevent multiple one from accumulating in the database
+Returns the segment for the given index.
+Returns a pseudorandom, uniformly distributed value between the given least value (inclusive) and bound (exclusive).
+Joye's double-add algorithm.
+List items using a specified sort order. The method is secure as the user input is validated before use. However the database has no chance to verify this.
+Parses a 32-bit int.
+Enable the compare all and compare changes button if possible. This checks to make sure this is appropriate, given the attached programmer's capability.
+Generate name that consists of some event information.
+<!-- begin-user-doc --> <!-- end-user-doc -->
+Opens the specified file or folder in the default file browser application of the user's OS. <p> If a file is specified, on Windows it will also be selected. </p>
+Determines the minimum and maximum result of this node for the given inputs and returns the result of the given BiFunction on the minimum and maximum values. Note that the minima and maxima are calculated using signed min/max functions, while the values themselves are unsigned.
+Convert the class into a printable signature string.
+if a JPopupMenu is set, it is displayed again. Displaying this dialog closes any JPopupMenu automatically.
+Determines if this marker is a game. Default is true, so override is only necessary if implementation is not a game.
+Creates a new instance.
+Returns a histogram of all samples where the values are normalized so that the sum of all samples equals one.
+Supports createUsers() by waiting for two users to be created. They aren't created immediately, so this polls.
+Enqueues data in the send buffer
+De-serialization ctor.
+Validates a tag type key. This method also trims the key parameters.
+Computes the next prime greater than n.
+Append choosen character to StringBuffer.
+Returns an array size suitable for the backing array of a hash table that uses open addressing with linear probing in its implementation. The returned size is the smallest power of two that can hold setSize elements with the desired load factor.
+Revalidate the range minimum.
+Initializes the batch signer with the given actor system.
+Dump all PrintData - header and rows
+Is the condition code HIGHER?
+Apply rotation about the Z axis to this matrix by rotating the given amount of radians. <p> When used with a right-handed coordinate system, the produced rotation will rotate a vector  counter-clockwise around the rotation axis, when viewing along the negative axis direction towards the origin. When used with a left-handed coordinate system, the rotation is clockwise. <p> If <code>M</code> is <code>this</code> matrix and <code>R</code> the rotation matrix, then the new matrix will be <code>M * R</code>. So when transforming a vector <code>v</code> with the new matrix by using <code>M * R * v</code>, the rotation will be applied first! <p> Reference: <a href="http://en.wikipedia.org/wiki/Rotation_matrix#Basic_rotations">http://en.wikipedia.org</a>
+Returns a connection, which is established via the <code>proxy</code>, to the FTP server specified by this <code>URL</code>. If <code>proxy</code> is DIRECT type, the connection is made in normal way.
+Check if mobile network classified 4G with matching IMSI.
+Write the current output to a buffer.
+Creates a new Random Decision Tree
+Report the comment trace event
+Initialize our view.
+Undeployment callback invoked when class loader is being undeployed. Some marshallers may want to clean their internal state that uses the undeployed class loader somehow.
+Comparator puts the entries into descending order by the query execution time (longest running queries are first).
+Tests that a ResourceParameterInspection error is generated for a resource parameter of List type.
+Parses the given string and inserts the resulting formula at the end of the current TeXFormula.
+Fallback method for getRecommendations()
+Annotate the difference between previous balance and actual from cash scrutiny in the cash book
+Performs checks to determine if the image has a JPG thumbnail in the EXIF data. <p> The EXIF TAG_COMPRESION , and the magic number at the beginning of the thumbnail bytes are used to verify that the thumb is in JPG format
+Wait until src/main/resources/R/zeppelin_sparkr.R is initialized and call onScriptInitialized()
+Constructs a DefaultUnitConverter and registers a listener that handles changes in the look&amp;feel.
+Run the morpha algorithm on the specified string.
+This method can be overridden instead of readResponse
+Returns a stream of events that should be recorded. By default, an empty stream returned.
+Returns the tip text for this property
+Builds a SimpleObject describing the given Provider.
+Find all relationships related to the vertex or of the vertex relationship type.
+Convenience method for generating a method signature in human readable form.
+Get the count of the UiObject instances by the selector
+Returns if the given compute description is a compute host or not.
+Create an empty test directory or if the directory exists remove any files within it.
+auto generated Axis2 Error handler override this method for handling error response from queryAssociatedPortsForProcessor operation
+Returns a clone of this instance.
+Copies from a file to an output stream.
+Gets last generated local ID.
+Constructs new RoleEventImpl.
+Construct the collection from the files in the given directory that have the given file extension. All the files are expected to contain features of the given feature class. The file search is recursive, and will also look in sub-directories of the specified directory. The final two parameters allow a regular-expression find and replace operation for be performed on the found filenames in order to create the document identifier for each QLFDocument. This is useful to ensure only the document name is stored in the index, rather than the absolute path.
+The main method.
+Appends all the simple tests and bulk tests defined by the given instance's class to the current TestSuite.
+Override readObject which is used in serialization. Customize serialization of this exception to avoid escape of InternalRole which is not Serializable.
+Used to communicate a return object from a plugin tool to the main Whitebox user-interface.
+Escape quotes, \, /, \r, \n, \b, \f, \t and other control characters (U+0000 through U+001F).
+Returns a copy of this deque.
