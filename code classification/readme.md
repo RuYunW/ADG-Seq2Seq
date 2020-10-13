@@ -1,4 +1,4 @@
-### Experiment on Code Classification
+## Experiment on Code Classification
 
 To further explore what is encoded in the learned features, we conducted experiments using a simple one-layer feed-forward neural network with different mechanisms to perform the code classification task.  
 
