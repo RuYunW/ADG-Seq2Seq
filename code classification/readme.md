@@ -18,8 +18,8 @@ There are 131 different categories in the MTG dataset. Since our model and the c
 | Shadowmoor            | 241      | 13     | 13     | 267      |
 | Innistrad             | 240      | 13     | 13     | 266      |
 | Tempest               | 239      | 13     | 13     | 265      |
-| Gatecrash             | 221      | 12     | 12     | 245      |
-| **MTG-CC**            | **1189** | **64** | **64** | **1317** |
+| Gatecrash             | 211      | 12     | 12     | 235      |
+| **MTG-CC**            | **1179** | **64** | **64** | **1307** |
 
 
 #### 2. Training
