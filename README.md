@@ -1,7 +1,7 @@
 # ADG-Seq2Seq: Embedding API Dependency Graph for neural code generation
 ### An Encoder_Decoder_Embedder based model 
 
-Our paper:[Embedding API Dependency Graph for neural code generation](http://paperaddress.com)
+Our paper:[Embedding API Dependency Graph for neural code generation](https://link.springer.com/article/10.1007/s10664-021-09968-2)
 
 ---
 
@@ -52,6 +52,16 @@ void assignToBlock(BlockId blk){
 ```
 
 ---
-**Authors Information**:  
-Corresponding Author: Chen Lyu  (<lvchen@sdnu.edu.cn>)  
-School of Information Science and Engineering, Shandong Normal University
+**Citation**:  
+If you find this code useful in your research, please cite our paper:
+> @article{lyu2021embedding,
+  title={Embedding API dependency graph for neural code generation},
+  author={Lyu, Chen and Wang, Ruyun and Zhang, Hongyu and Zhang, Hanwen and Hu, Songlin},
+  journal={Empirical Software Engineering},
+  volume={26},
+  number={4},
+  pages={1--51},
+  year={2021},
+  publisher={Springer}
+}
+
