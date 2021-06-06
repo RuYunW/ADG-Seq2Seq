@@ -54,7 +54,8 @@ void assignToBlock(BlockId blk){
 ---
 **Citation**:  
 If you find this code useful in your research, please cite our paper:
-> @article{lyu2021embedding,
+```
+@article{lyu2021embedding,
   title={Embedding API dependency graph for neural code generation},
   author={Lyu, Chen and Wang, Ruyun and Zhang, Hongyu and Zhang, Hanwen and Hu, Songlin},
   journal={Empirical Software Engineering},
@@ -64,4 +65,5 @@ If you find this code useful in your research, please cite our paper:
   year={2021},
   publisher={Springer}
 }
+```
 
